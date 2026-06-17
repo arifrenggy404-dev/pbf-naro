@@ -5,14 +5,23 @@
 
 @section('content')
 <div class="content-card" style="max-width: 800px; margin: 0 auto;">
+    @if($errors->any())
+        <div style="background: #f8d7da; color: #721c24; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+            <ul style="margin-left: 20px;">
+                @foreach($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
     <form action="{{ route('inventaris.update', $item->id) }}" method="POST">
         @csrf
         @method('PUT')
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
             <div class="form-group">
                 <label style="display:block; margin-bottom:8px; font-weight:600;">Kode Barang</label>
-                <input type="text" name="kode_barang" value="{{ old('kode_barang', $item->kode_barang) }}" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:8px; background: #f8f9fa;" readonly>
-                <small style="color: #666;">Kode barang tidak dapat diubah.</small>
+                <input type="text" name="kode_barang" value="{{ old('kode_barang', $item->kode_barang) }}" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:8px;">
             </div>
             <div class="form-group">
                 <label style="display:block; margin-bottom:8px; font-weight:600;">Nama Barang</label>

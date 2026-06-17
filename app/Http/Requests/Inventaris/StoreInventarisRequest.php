@@ -13,8 +13,10 @@ class StoreInventarisRequest extends FormRequest
 
     public function rules(): array
     {
+        $id = $this->route('inventari');
+
         return [
-            'kode_barang' => 'required|string|unique:inventaris,kode_barang',
+            'kode_barang' => 'required|string|unique:inventaris,kode_barang,' . $id,
             'nama_barang' => 'required|string|max:255',
             'jumlah' => 'required|integer|min:0',
             'kondisi' => 'required|in:Baik,Rusak Ringan,Rusak Berat',

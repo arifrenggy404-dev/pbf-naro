@@ -5,6 +5,16 @@
 
 @section('content')
 <div class="content-card" style="max-width: 800px; margin: 0 auto;">
+    @if($errors->any())
+        <div style="background: #f8d7da; color: #721c24; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+            <ul style="margin-left: 20px;">
+                @foreach($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
     <form action="{{ route('jemaat.store') }}" method="POST">
         @csrf
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
