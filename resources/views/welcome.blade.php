@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gereja Kristen Sumba - Kasih, Iman & Pelayanan</title>
+    <title>Gereja Stasi Santa Elisabeth Lambanapu - Kasih, Iman & Pelayanan</title>
     
     <!-- Google Fonts: Inter & Playfair Display for Serene and Elegant typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,8 +75,8 @@
                         <i class="fa-solid fa-church text-white text-xl"></i>
                     </div>
                     <div>
-                        <span class="font-serif font-bold text-xl tracking-wide text-white group-hover:text-amber-400 transition-colors duration-300 block">GK Sumba</span>
-                        <span class="text-[10px] tracking-widest text-amber-500 uppercase font-semibold block -mt-1">Gereja Kristen</span>
+                        <span class="font-serif font-bold text-lg tracking-wide text-white group-hover:text-amber-400 transition-colors duration-300 block">Stasi St. Elisabeth</span>
+                        <span class="text-[10px] tracking-widest text-amber-500 uppercase font-semibold block -mt-1">Lambanapu</span>
                     </div>
                 </a>
 
@@ -147,7 +147,7 @@
             </div>
             
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif font-bold tracking-tight text-white mb-6">
-                Selamat Datang di <span class="bg-gradient-to-r from-amber-400 via-amber-200 to-yellow-400 bg-clip-text text-transparent">Gereja Kristen Sumba</span>
+                Selamat Datang di <span class="bg-gradient-to-r from-amber-400 via-amber-200 to-yellow-400 bg-clip-text text-transparent">Stasi Santa Elisabeth Lambanapu</span>
             </h1>
             
             <p class="max-w-2xl mx-auto text-lg sm:text-xl text-slate-300 leading-relaxed mb-10 font-light">
@@ -235,7 +235,7 @@
                         Melayani Tuhan dengan Sukacita dan Ketulusan Hati
                     </h2>
                     <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-                        Gereja Kristen Sumba adalah wadah persekutuan bagi setiap insan yang rindu mencari kebenaran firman Tuhan dan bertumbuh bersama dalam iman. Kami berkomitmen untuk membangun karakter jemaat yang berlandaskan kasih Kristus melalui berbagai program ibadah, pembinaan pemuda, pendalaman Alkitab, dan aksi sosial kemasyarakatan.
+                        Gereja Stasi Santa Elisabeth Lambanapu adalah wadah persekutuan bagi setiap insan yang rindu mencari kebenaran firman Tuhan dan bertumbuh bersama dalam iman. Kami berkomitmen untuk membangun karakter jemaat yang berlandaskan kasih Kristus melalui berbagai program ibadah, pembinaan pemuda, pendalaman Alkitab, dan aksi sosial kemasyarakatan.
                     </p>
                     
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
@@ -373,7 +373,7 @@
                                 <i class="fa-solid fa-location-dot text-amber-500 mt-1 flex-shrink-0 w-4"></i>
                                 <div>
                                     <p class="font-medium text-slate-800 dark:text-slate-200">Lokasi</p>
-                                    <p class="text-slate-500 dark:text-slate-400 text-xs">Ruang Utama GK Sumba</p>
+                                    <p class="text-slate-500 dark:text-slate-400 text-xs">Gereja Stasi Lambanapu</p>
                                 </div>
                             </div>
                             
@@ -410,7 +410,7 @@
                                 <i class="fa-solid fa-location-dot text-amber-500 mt-1 flex-shrink-0 w-4"></i>
                                 <div>
                                     <p class="font-medium text-slate-800 dark:text-slate-200">Lokasi</p>
-                                    <p class="text-slate-500 dark:text-slate-400 text-xs">Gedung Pemuda GK Sumba</p>
+                                    <p class="text-slate-500 dark:text-slate-400 text-xs">Gedung Pembinaan Stasi Lambanapu</p>
                                 </div>
                             </div>
                             
@@ -670,13 +670,13 @@
                         <div class="bg-amber-600 p-2 rounded-lg">
                             <i class="fa-solid fa-church text-white"></i>
                         </div>
-                        <span class="font-serif font-bold text-lg text-white">Gereja Kristen Sumba</span>
+                        <span class="font-serif font-bold text-lg text-white">Stasi Santa Elisabeth Lambanapu</span>
                     </div>
                     <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
                         Kami adalah persekutuan jemaat yang berpusat pada Kristus, melayani dengan kerendahan hati, terbuka bagi setiap orang, dan berupaya membawa damai sejahtera bagi dunia.
                     </p>
                     <p class="text-xs text-slate-400">
-                        <i class="fa-solid fa-location-dot text-amber-500 mr-2"></i> Jalan Sumba No. 404, Sumba, Indonesia
+                        <i class="fa-solid fa-location-dot text-amber-500 mr-2"></i> Jalan Lambanapu No. 404, Sumba, Indonesia
                     </p>
                 </div>
 
@@ -696,7 +696,7 @@
                     <h4 class="text-sm font-semibold uppercase tracking-wider text-amber-500 mb-4">Hubungi Kami</h4>
                     <ul class="space-y-2 text-xs text-slate-400">
                         <li><i class="fa-solid fa-phone text-amber-500 mr-2"></i> (021) 1234-5678</li>
-                        <li><i class="fa-solid fa-envelope text-amber-500 mr-2"></i> info@gksumba.or.id</li>
+                        <li><i class="fa-solid fa-envelope text-amber-500 mr-2"></i> info@stasilambanapu.or.id</li>
                         <li><i class="fa-brands fa-whatsapp text-amber-500 mr-2"></i> +62 812-3456-7890</li>
                     </ul>
                     <div class="flex space-x-3 mt-4">
@@ -715,7 +715,7 @@
 
             <!-- Bottom Bar -->
             <div class="pt-8 border-t border-slate-800 text-center flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
-                <p>&copy; {{ date('Y') }} Gereja Kristen Sumba. Seluruh hak cipta dilindungi undang-undang.</p>
+                <p>&copy; {{ date('Y') }} Gereja Stasi Santa Elisabeth Lambanapu. Seluruh hak cipta dilindungi undang-undang.</p>
                 <div class="mt-2 sm:mt-0 space-x-4">
                     <a href="#" class="hover:underline">Kebijakan Privasi</a>
                     <span>&bull;</span>
