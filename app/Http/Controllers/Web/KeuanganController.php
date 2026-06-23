@@ -36,4 +36,22 @@ class KeuanganController extends Controller
         $this->service->recordTransaction($request->validated());
         return redirect()->route('keuangan.index')->with('success', 'Transaksi berhasil dicatat.');
     }
+
+    public function edit($id)
+    {
+        $transaksi = $this->service->getTransaction($id);
+        return view('keuangan.edit', compact('transaksi'));
+    }
+
+    public function update(StoreKeuanganRequest $request, $id)
+    {
+        $this->service->updateTransaction($id, $request->validated());
+        return redirect()->route('keuangan.index')->with('success', 'Transaksi berhasil diperbarui.');
+    }
+
+    public function destroy($id)
+    {
+        $this->service->deleteTransaction($id);
+        return redirect()->route('keuangan.index')->with('success', 'Transaksi berhasil dihapus.');
+    }
 }

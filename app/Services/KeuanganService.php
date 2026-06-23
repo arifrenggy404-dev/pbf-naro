@@ -48,6 +48,35 @@ class KeuanganService
         ];
     }
 
+    public function getTransaction(int $id)
+    {
+        return $this->repository->findById($id);
+    }
+
+    public function updateTransaction(int $id, array $data)
+    {
+        try {
+            return DB::transaction(function () use ($id, $data) {
+                // If type changed, we might generate a new transaction number or keep the old one.
+                // Keeping the old one is standard unless specified otherwise. Let's keep it.
+                return $this->repository->update($id, $data);
+            });
+        } catch (Exception $e) {
+            Log::error("Gagal memperbarui transaksi keuangan ID {$id}: " . $e->getMessage());
+            throw $e;
+        }
+    }
+
+    public function deleteTransaction(int $id)
+    {
+        try {
+            return $this->repository->delete($id);
+        } catch (Exception $e) {
+            Log::error("Gagal menghapus transaksi keuangan ID {$id}: " . $e->getMessage());
+            throw $e;
+        }
+    }
+
     /**
      * Generate unique transaction number: TX-[IN/OUT]-YYYYMMDD-RAND
      */

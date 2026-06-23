@@ -64,7 +64,14 @@
                     <td><span style="color: {{ $item->tipe == 'Pemasukan' ? 'var(--success-color)' : 'var(--danger-color)' }}; font-weight: 600;">{{ $item->tipe }}</span></td>
                     <td style="font-weight: bold;">{{ $item->tipe == 'Pengeluaran' ? '-' : '' }}Rp {{ number_format($item->jumlah, 0, ',', '.') }}</td>
                     <td>
-                        <button class="btn" style="background: #f8f9fa;"><i class="fas fa-eye"></i></button>
+                        <div style="display: flex; gap: 5px;">
+                            <a href="{{ route('keuangan.edit', $item->id) }}" class="btn btn-primary" style="padding: 5px 10px;"><i class="fas fa-edit"></i></a>
+                            <form action="{{ route('keuangan.destroy', $item->id) }}" method="POST" onsubmit="return confirm('Hapus transaksi ini?')">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger" style="padding: 5px 10px;"><i class="fas fa-trash"></i></button>
+                            </form>
+                        </div>
                     </td>
                 </tr>
                 @empty

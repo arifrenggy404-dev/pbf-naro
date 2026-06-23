@@ -39,4 +39,21 @@ class KeuanganRepository
             ->selectRaw("SUM(CASE WHEN tipe = 'Pengeluaran' THEN jumlah ELSE 0 END) as total_pengeluaran")
             ->first();
     }
+
+    public function findById(int $id): Keuangan
+    {
+        return Keuangan::findOrFail($id);
+    }
+
+    public function update(int $id, array $data): Keuangan
+    {
+        $transaction = Keuangan::findOrFail($id);
+        $transaction->update($data);
+        return $transaction;
+    }
+
+    public function delete(int $id): bool
+    {
+        return Keuangan::findOrFail($id)->delete();
+    }
 }
